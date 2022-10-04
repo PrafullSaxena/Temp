@@ -31,7 +31,7 @@ def filter_validation(searchSpace, filter_values):
         # validating if searchDict is empty if so, continue to next searchDict 
         if not bool(searchDict):
             print("Search Space is empty!!")
-            break
+            continue
         
         for filter_key in filter_values:
             if filter_key in searchDict:
